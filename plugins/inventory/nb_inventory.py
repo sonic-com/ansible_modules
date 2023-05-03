@@ -1499,7 +1499,7 @@ class InventoryModule(BaseInventoryPlugin, Constructable, Cacheable):
 
         if netbox_api_version != cached_api_version:
             openapi = self._fetch_information(
-                self.api_endpoint + "/api/docs/?format=openapi"
+                self.api_endpoint + "/api/schema/"
             )
 
             with open(tmp_file, "w") as file:

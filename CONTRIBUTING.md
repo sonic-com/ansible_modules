@@ -122,7 +122,7 @@ ENDPOINT_NAME_MAPPING = {
 }
 ```
 
-Log into your NetBox instance and navigate to `/api/docs` and searching for the **POST** documents for the given endpoint you're looking to create.
+Log into your NetBox instance and navigate to `/api/schema` and searching for the **POST** documents for the given endpoint you're looking to create.
 ![POST Results](docs/media/postresults.PNG)
 The module should implement all available fields that are not the **id** or **readOnly** such as the **created, last_updated, device_count** in the example above.
 
